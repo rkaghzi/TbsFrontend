@@ -1,0 +1,17 @@
+.feedback-form {
+    margin: 20px 0;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea,
+  .feedback-form button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+  }
+  

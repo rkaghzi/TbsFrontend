@@ -1,0 +1,16 @@
+.daily-log-details {
+    padding: 40px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+  }
+  
+  .daily-log-details h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .daily-log-details p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  

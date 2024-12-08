@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Loader Animation */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .loader::after {
+    content: '...';
+    animation: loading 1s infinite;
+  }
+  
+  @keyframes loading {
+    0% { content: 'Loading'; }
+    33% { content: 'Loading.'; }
+    66% { content: 'Loading..'; }
+    100% { content: 'Loading...'; }
+  }
+  
+  /* Lost Item Details Styles */
+  .lost-item-details {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lost-item-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .lost-item-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .lost-item-details strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .lost-item-details button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px 0;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .lost-item-details a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #007bff;
+  }
+  
+  .lost-item-details a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .lost-item-details {
+      padding: 20px;
+      margin: 30px 20px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .lost-item-details h2 {
+      font-size: 1.75rem;
+    }
+  
+    .lost-item-details p {
+      font-size: 0.95rem;
+    }
+  
+    .lost-item-details button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .lost-item-details h2 {
+      font-size: 1.5rem;
+    }
+  
+    .lost-item-details p {
+      font-size: 0.9rem;
+    }
+  
+    .lost-item-details {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .lost-item-details h2 {
+      font-size: 1.2rem;
+    }
+  
+    .lost-item-details p {
+      font-size: 0.85rem;
+    }
+  
+    .lost-item-details button {
+      font-size: 0.9rem;
+    }
+  }
+  

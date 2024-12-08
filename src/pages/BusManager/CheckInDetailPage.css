@@ -1,0 +1,131 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Loader styling */
+.loader {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    animation: spin 1s infinite linear;
+}
+
+/* Loader animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Check-in details container */
+.check-in-details {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Heading */
+.check-in-details h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.check-in-details p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Styling for strong tags inside paragraphs */
+.check-in-details p strong {
+    color: #007bff;
+}
+
+/* Link and button styling */
+.check-in-details a,
+.check-in-details button {
+    color: #007bff;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Hover effect for links and buttons */
+.check-in-details a:hover,
+.check-in-details button:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Responsive design for medium screens */
+@media screen and (max-width: 768px) {
+    .check-in-details {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .check-in-details h2 {
+        font-size: 1.8rem;
+    }
+
+    .check-in-details p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive design for small screens (mobile) */
+@media screen and (max-width: 480px) {
+    .check-in-details {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .check-in-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .check-in-details p {
+        font-size: 0.9rem;
+    }
+
+    .loader {
+        font-size: 1.5rem;
+    }
+}
+
+/* Large screen adjustments */
+@media screen and (min-width: 1200px) {
+    .check-in-details {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .check-in-details h2 {
+        font-size: 2.5rem;
+    }
+
+    .check-in-details p {
+        font-size: 1.2rem;
+    }
+}

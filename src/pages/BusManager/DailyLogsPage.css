@@ -1,0 +1,35 @@
+.daily-logs-page {
+    padding: 40px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .logs-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .log-item {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .log-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .log-item p {
+    font-size: 1rem;
+  }
+  
